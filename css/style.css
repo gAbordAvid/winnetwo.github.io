@@ -1,0 +1,441 @@
+@charset "UTF-8";
+/*! normalize.css v3.0.2 | MIT License | git.io/normalize */
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */ }
+
+/**
+ * Remove default margin.
+ */
+body {
+  margin: 0; 
+  overflow-x: hidden; 
+    color: white;
+    width: 100%;
+    
+}
+.preloader {
+    width: 100%;
+    min-height: 100%;
+    overflow: show;
+  margin: auto;
+  padding-top: 50px;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: fixed;
+    display: block;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    
+    color: #fff;
+    background-color: #242424;
+    font-family: Consolas, Menlo, Monaco, monospace !important;
+    font-weight: bold;
+    font-size: 30vh;
+    z-index: 1099;
+  }
+  
+  .preloader span {
+    display: block;
+    opacity: 0.8;
+    animation: pulse 0.4s alternate infinite ease-in-out;
+    
+      }
+
+
+  .preloader span:nth-child(odd) {
+    animation-delay: 0.4s;
+    z-index: 1100;
+  }
+  
+  @keyframes pulse {
+    to {
+      transform: scale(0.8);
+      opacity: 0.5;
+    }
+  }
+  
+  .preloader.hidden {
+    animation: fadeOut 1s;
+    animation-fill-mode: forwards;
+  }
+  
+  @keyframes fadeOut {
+    100% {
+      opacity: 0;
+      visibility: hidden;
+    }
+  }
+
+.header{
+    position: relative;
+    height: 600px;
+    width: 100%;
+    overflow: hidden;
+    background: url("../image/blake-connally-373084-unsplash.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: top center;
+    z-index: 3;
+}
+
+nav.black {
+    background-color: black;
+ 
+}
+
+
+h1{
+    font-family: 'Pacifico', cursive;
+    position: absolute;
+    height: 100px;
+    font-size: 150px;
+    width: 100%;
+    color: white;
+    top: 50%;
+    margin-top: -140px;
+    text-align: center;
+}
+
+.h22 {
+    font-family: 'Pacifico', cursive;
+    display: flex;
+    float: left;
+    margin-left: 40px;
+    font-size: 100px;
+    width: 100%;
+    color: white;
+    margin-top: 400px;
+    text-align: center;
+}
+
+h2{
+    font-family: 'Pacifico', cursive;  
+}
+
+.large-window{
+
+    height: 400px;
+   
+    background-image: url("../image/profil.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center 0px;
+    border-radius: 25%;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    position: relative;
+    
+    /*transform: translateY(-100px);*/
+}
+
+
+.content {
+    position: relative;
+   margin-bottom: 300px;
+    z-index: 2;
+    background-color: #242424;
+}
+
+.content article {
+      padding: 100px 0;
+      max-width: 640px;
+      margin: 0 auto;
+      text-align: center; 
+}
+
+.referencia{
+    padding-top: 100px;
+}
+
+.tanulmanyok {
+    margin-bottom: 100px; 
+    
+}
+
+
+.tanulmanyok img{
+    height: 150px;
+    width: 100px;
+    
+    transform: scale(1);
+    transition: all 0.3s ease-in-out;
+}
+
+.tanulmanyok img:hover{
+    transform: scale(1.2);
+}
+
+.tanulmanyok figure{
+    margin-bottom: 20px;
+    position: relative;
+    opacity: 0;
+    transform: translateX(30px);
+    transition: all 0.4s ease-in-out;
+    overflow: hidden;
+    cursor: pointer;
+
+}
+
+.tanulmanyok figure:hover figcaption{
+    left: 15%;
+   
+}
+
+.tanulmanyok figure.mutat{
+   opacity: 1;
+   transform: translateX(0px);
+}
+
+.tanulmanyok figcaption{
+    position: absolute;
+    background: black;
+    color: white;
+    font-size: 11px;
+    padding: 2px 8px;
+    left: -100%;
+    bottom: 50%;
+    transition: all 0.3s ease-in-out;
+    
+}
+
+.card{
+    color: #242424;
+    height: 100%;
+}
+
+.fa1{
+    margin-top: 50px;
+}
+
+
+.card-1{
+    transform: translate(100px, 20px);
+}
+
+.card-2{
+    z-index: 2;
+}
+
+.card-3{
+    transform: translate(-100px, 20px);
+}
+
+.hide{
+    display: none;
+}
+
+footer{
+   position: fixed;
+bottom: 0;
+   width: 100%;
+   
+    
+    z-index: 1;
+    background-color: black;
+    text-align: center;
+    color: white;
+    padding-bottom: 300px;
+}
+
+footer ul{
+    padding-top: 150px;
+    margin-bottom: -1000px;
+}
+
+.jobb{
+    float: right;
+}
+footer h3{
+    
+    font-family: 'Pacifico', cursive;
+    
+}
+
+footer ul li{
+    text-decoration: none;
+    list-style-type: none;
+    color: white;
+    
+}
+
+
+footer a{
+    color: white;
+}
+
+footer .a0:hover{
+    text-decoration: none;
+    list-style-type: none;
+    color: white;
+    
+}
+
+footer .a1:hover{
+    text-decoration: none;
+    list-style-type: none;
+    color: #3C5A99;
+    
+}
+
+footer .a2:hover{
+    text-decoration: none;
+    list-style-type: none;
+    color: #1DA1F2;
+    
+}
+
+footer .a3:hover{
+    text-decoration: none;
+    list-style-type: none;
+    color: #C13584;
+    
+}
+
+footer .a4:hover{
+    text-decoration: none;
+    list-style-type: none;
+    color: #DB4437;
+    
+}
+
+footer .a5:hover{
+    text-decoration: none;
+    list-style-type: none;
+    color: #4AC959;
+}
+
+
+.copyright{
+    text-align: center;
+    color: white;
+    display: block;
+   width: 100%;
+   height: 40px;
+   top: 300px;
+  
+}
+
+ul{
+    font-weight: bold;
+    list-style-type: none;
+}
+
+.ikons{
+    display: none;
+}
+
+
+@media screen and (max-width: 991px) {
+    footer h2 {
+      font-size: 25px;
+    }
+  }
+
+  @media screen and (max-width: 867px) {
+    footer li {
+      font-size: 12px;
+    }
+    .copyright{
+        font-size: 12px;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    footer h2 {
+      font-size: 15px;
+    }
+    footer li i{
+        display: none;
+    }
+  }
+
+  @media screen and (max-width: 712px) {
+    h1{
+    font-family: 'Pacifico', cursive;
+    position: absolute;
+    font-size: 80px;
+    
+    width: 100%;
+    color: white;
+    top: 50%;
+    
+    text-align: center;
+    }
+
+    h2{
+        font-size: 20px;
+    }
+
+    p{
+        font-size: 12px;
+    }
+
+    .h22 i{
+        width: 100%;
+        height: 70%;
+    }
+
+    .tanulmanyok{
+        display: none;
+    }
+
+    .tanulmanyok img{
+        height: 80px;
+    width: 60px;
+    }
+
+    .large-window{
+
+        height: 200px;
+       
+    }
+
+
+  }
+
+  @media screen and (max-width: 515px) {
+
+    h1{
+        font-size: 60px;
+    }
+
+    .card {
+        display: none;
+    }
+
+    .hide{
+        display: block;
+        padding: 10px;
+    }
+
+    footer li, h2{
+        display: none;
+    }
+    .ikons {
+        display: block;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        text-align: center;
+        color: white;
+        margin-bottom: 100px;
+    }
+      
+    .ikons i{
+        padding: 10px;
+    }
+   
+  }
